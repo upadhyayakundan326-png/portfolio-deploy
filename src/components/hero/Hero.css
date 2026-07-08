@@ -1,0 +1,133 @@
+/* Hero Section */
+
+.home-section {
+  width: 100%;
+  min-height: 100vh;
+   
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 8%;
+}
+
+.hero{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:100px;
+}
+
+/* Left Side */
+
+.hero-left {
+  flex: 1;
+}
+
+.sec1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sec2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #38bdf8;
+  margin-bottom: 25px;
+ 
+             
+              
+}
+
+
+
+  .sec3{
+    width:520px;
+    min-height:320px;   /* 👈 height badh jayegi */
+
+    padding:30px;
+
+    border:2px solid #00f5ff;
+    border-radius:18px;
+
+    box-shadow:0 0 18px #00f5ff;
+
+    display:flex;
+    align-items:center;
+}
+  
+  
+
+
+/* Right Side */
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.siuu {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 40px #38bdf8;
+  transition: 0.5s;
+}
+
+.siuu:hover{
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec1 {
+    font-size: 2.2rem;
+  }
+
+  .sec2 h3 {
+    font-size: 1.5rem;
+  }
+
+  .sec3 {
+    font-size: 1rem;
+  }
+
+  .siuu {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 30px;
+  }
+}
+.sec2{
+  color: #fff;
+}
+.sec3 p{
+    width:100%;
+    color:#cbd5e1;
+    line-height:2;
+    font-size:18px;
+}

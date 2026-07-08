@@ -1,0 +1,73 @@
+.project-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 50px;
+    
+    margin-top: 200px;
+    
+}
+
+.jerseyca{
+    width: 650px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.h1{
+    color:#ffffff;
+    font-weight: 700;
+    font-size:3rem ;
+    text-decoration: underline;
+  text-decoration-color: crimson;
+
+  text-decoration-thickness: 6px;
+  text-underline-offset: 6px;
+}
+
+
+.Github{
+    background-color: crimson;
+    color:white;
+    border-radius: 8px;
+    padding:10px 20px;
+    transition: all 0.3s ease;
+    
+     
+
+
+
+}
+.Github:hover{
+    transform: scale(1.08);
+   
+}
+.demo{
+    background-color: crimson;
+    color:white;
+    border-radius: 8px;
+    padding:10px 20px;
+    transition: all 0.3s ease;
+
+}
+.demo:hover{
+     transform: scale(1.08);
+}
+.flex{
+    display:flex;
+    gap:200px;
+}
+.features{
+    color:#ffffff;
+    font-weight: 700;
+    font-size:3rem ;
+    text-decoration: underline;
+  text-decoration-color: crimson;
+
+  text-decoration-thickness: 6px;
+  text-underline-offset: 6px;
+}
