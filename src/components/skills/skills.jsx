@@ -2,11 +2,13 @@
 import "./Skills.css";
 import { color, motion } from "framer-motion";
 const skills = [
-  { name: "HTML5", icon: "🌐" },
-  { name: "CSS3", icon: "🎨" },
+  { name:"HTML5", icon: "🌐" },
+  { name:"CSS3", icon: "🎨" },
   { name: "JavaScript", icon: "🟨" },
   { name: "React.js", icon: "⚛️" },
-  { name: "Framer Motion", icon: "✨" },
+  { name:"Framer Motion", icon: "✨" },
+  {name:"C++",icon:"➕"},
+  {name:"OOPS",icon:"🧩"},
 ];
 
 const tools = [
@@ -21,13 +23,26 @@ const learning = [
   { name: "Express.js", icon: "🚀" },
   { name: "MongoDB", icon: "🍃" },
 ];
+const card = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+  duration: 0.5,
+    },
+  },
+};
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills-section"
+    <motion.section id="skills" className="skills-section"
     initial={{ opacity: 0, scale: 0.9 }}
   whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 3}}
+  transition={{ duration: 2}}
   viewport={{ once: false, amount: 0.3 }}
     
     >
@@ -70,9 +85,6 @@ const Skills = () => {
           whileHover={{ scale: 1.1, 
             rotate: 0 ,
             backgroundColor:"crimson",
-             
-            
-            
 
           }}
   transition={{ type: "spring", stiffness: 300 }}
@@ -101,8 +113,7 @@ const Skills = () => {
 
       <motion.div className="skills-container"
       
-      
-       initial={{
+      initial={{
     y: 100,
     opacity: 0,
   }}
@@ -118,7 +129,7 @@ const Skills = () => {
     once: false,
     amount: 0.3,
   }}
-      
+       
       >
         {tools.map((tool, index) => (
           <motion.div className="skill-card" key={index}
@@ -162,14 +173,13 @@ const Skills = () => {
         {learning.map((item, index) => (
           <motion.div className="skill-card" key={index}
           
-          
-         whileHover={{ scale: 1.1, 
-            rotate: 0 ,
-            backgroundColor:"crimson",
-           }}
-           whileTap={{
-            scale:0.5,
-           }}
+        
+  variants={card}
+  whileHover={{
+    scale: 1.08,
+    backgroundColor: "crimson",
+  }}
+        
           
           >
             <span className="skill-icon">{item.icon}</span>
@@ -177,7 +187,7 @@ const Skills = () => {
           </motion.div>
         ))}
       </motion.div>
-    </section>
+    </motion.section>
     
   );
 };

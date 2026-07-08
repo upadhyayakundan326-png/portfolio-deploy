@@ -51,7 +51,8 @@ function Contact() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/kundan-upadhyaya-28b9a7412?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          
           target="_blank"
           rel="noreferrer"
           className="contact-item"

@@ -5,7 +5,6 @@ import { easeInOut, motion } from "framer-motion";
 const text = "Hi, I'm Kundan 👋";
 const name ="Kundan";
 
-// Parent Variant
 const container = {
   hidden: {},
   visible: {
@@ -15,7 +14,7 @@ const container = {
   },
 };
 
-// Child Variant
+
 const child = {
   hidden: {
     opacity: 0,
@@ -32,10 +31,24 @@ const child = {
 
 function Home() {
   return (
-    <div className="home-section">
+    <motion.div className="home-section"
+    
+    initial={{
+      opacity:0,
+      scale:0.9,
+
+    }}
+    whileInView={{
+      opacity:1,
+      scale:1.02,
+    }}
+    transition={{ duration: 2}}
+  viewport={{ once: false, amount: 0.3 }}
+    
+    >
       <section id="home" className="hero">
 
-        {/* Left Side */}
+        
         <div className="hero-left">
 
           <motion.h1
@@ -65,14 +78,14 @@ function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 1,
+              delay: 1.05,
               duration: 0.02,
             }}
 
             whileHover={{
               scale
               :1.08,
-              color:"crimson",
+              
               ease:easeInOut,
             }}
             
@@ -86,7 +99,7 @@ function Home() {
             Building Modern & Responsive Web Experiences
           </motion.h3>
 <motion.div
-  className="left sec3"
+  className=" sec3"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{
@@ -106,26 +119,13 @@ function Home() {
   
   
   
-initial={
-  {
-    //x:-50,
-    color:"#212121",
-  }
-}  
-animate={{
-  //x:[-50,50,50],
-  color:"#fff",
-}}
+
 
 whileHover={{
   scale:1.02,
     
 }}
-transition={{
-  duration:10,
-  ease:easeInOut,
-  repeat:Infinity,
-}}
+
   
   >
     <b>Description:</b>
@@ -165,9 +165,8 @@ transition={{
             }}
           />
         </motion.div>
-
       </section>
-    </div>
+    </motion.div>
   );
 }
 

@@ -47,8 +47,8 @@
 
 
   .sec3{
-    width:520px;
-    min-height:320px;   /* 👈 height badh jayegi */
+    width:350px;
+    min-height:220px;   /* 👈 height badh jayegi */
 
     padding:30px;
 
@@ -77,8 +77,8 @@
   height: 380px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #38bdf8;
-  box-shadow: 0 0 40px #38bdf8;
+  border: 5px solid cyan;
+  box-shadow: 0 0 40px cyan;
   transition: 0.5s;
 }
 
@@ -92,42 +92,43 @@
 
 /* Responsive */
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+@media (max-width:768px){
 
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sec1 {
-    font-size: 2.2rem;
-  }
-
-  .sec2 h3 {
-    font-size: 1.5rem;
-  }
-
-  .sec3 {
-    font-size: 1rem;
-  }
-
-  .siuu {
-    width: 280px;
-    height: 280px;
-    margin-bottom: 30px;
-  }
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:35px;
+    padding:50px 0;
 }
+
+.hero-left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.sec1{
+    font-size:2.3rem;
+}
+
 .sec2{
-  color: #fff;
+    font-size:1.25rem;
 }
+
+.sec3{
+    max-width:100%;
+}
+
 .sec3 p{
-    width:100%;
-    color:#cbd5e1;
-    line-height:2;
-    font-size:18px;
+    font-size:0.95rem;
+    line-height:1.8;
 }
+
+.siuu{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+}
+
+}
+

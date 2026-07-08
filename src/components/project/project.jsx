@@ -4,20 +4,23 @@ import { color, motion } from "framer-motion";
 
 const Project = () => {
   return (<>
-    <motion.div className='project-container'
+    <motion.div className='project-container'id='project'
     
     
     initial={{
     y: 100,
     opacity: 0,
+    scale:0.9,
   }}
   whileInView={{
     y: 0,
     opacity: 1,
+    scale:1,
   }}
   transition={{
-    duration: 0.8,
+    duration: 2,
     ease: "easeOut",
+     type: "spring", 
   }}
   viewport={{
     once: false,
@@ -40,7 +43,14 @@ const Project = () => {
       <img src='jerseycaaaaa.jpg'alt='Browsing issue' className='jerseyca'></img>
 
         <h1 className='features'>Features</h1>
+           
+           
       <ul className='bulletine'>
+        <li>(implement props for passing data)</li>
+        <li>implement react router for client side rendering</li>
+        <li>use state managment with usestate and also use usefect</li>
+        <li>created reusable components</li>
+        
        <li>Responsive React.js UI</li>
         <li>Search jerseys by team name</li>
         <li>Filter by National & Club category</li>
@@ -50,8 +60,15 @@ const Project = () => {
         <li>Remove items from cart</li>
         <li>Total price calculation</li>
       </ul>
+               <h1 className='f'>Future Improvements</h1>
+      <ul className='future'>
+        <li>replace props drilling with context api for scalability</li>
+        <li> make the entire application fully responsiv</li>
+        <li>intregrate backend</li>
+        <li>improve the code structure for better user experience</li>
+      </ul>
       <div className='flex'>
-      <a href="https://github.com/upadhyayakundan326-png/jerseyca"
+      <a href=""
          target="_blank"   
          className='demo' 
          >  
