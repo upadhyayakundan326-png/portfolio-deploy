@@ -4,9 +4,11 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding:60px 20px;
+    
+    width: 100%;
+    padding: 100px 4%;
+   
 }
-
 .contact-section h2{
     font-size:3rem;
     margin-bottom:15px;

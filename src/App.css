@@ -1,8 +1,7 @@
 body{
-  background:black;;
- 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   color: #fff;
+  overflow-x: hidden;
+  padding:0;
+  margin:0;
+  background-color: black;
 }
