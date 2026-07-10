@@ -94,10 +94,14 @@
     .sec2{
     font-size:14px;
     text-align:center;
-    padding:0 15px;
+   
     white-space:normal;
     width:100%;
-    word-break: break-word;
+    word-break: keep-all;
+    display: block;
+    max-width: 90%;
+    margin:0 auto;
+    line-height: 1.6;
 }
 }
 
