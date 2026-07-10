@@ -98,7 +98,7 @@ function Home() {
           >
             <p className="bca">BCA Student  |  Frontend Developer
             <br/>
-            Building Modern & Responsive Web Experiences</p>
+            Building Modern & Responsive <br/>Web Experiences</p>
           </motion.h3>
 
 
