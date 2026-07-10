@@ -20,7 +20,7 @@ const Navbar = () => {
         className="menu-btn"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        Menu
+        ☰
       </button>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>

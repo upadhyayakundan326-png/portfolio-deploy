@@ -84,8 +84,8 @@
 @media (max-width:768px){
 
 .project-container{
-    padding:40px 20px;
-    gap:30px;
+    width:100%;
+    box-sizing:border-box;
 }
 
 .h1,
