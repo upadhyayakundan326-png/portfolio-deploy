@@ -67,19 +67,14 @@
     width:100%;
     max-width:100%;
     gap:15px;
+    margin: 10px auto;
+    max-width: 350px;
 }
 
-.contact-item{
-    width:100%;
-    max-width:100%;
-    padding:16px;
-    font-size:16px;
-    text-align:center;
-    word-break:break-word;
+
 }
 
 .mail-btn{
     font-size:22px;
 }
 
-}

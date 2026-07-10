@@ -25,7 +25,7 @@ const child = {
     y: 0,  
     transition: {
       duration:0.6,
-      delay:1,
+      delay:0.5,
     },
   },
 };
@@ -81,7 +81,7 @@ function Home() {
             transition={{
               
               duration: 3,
-              delay:2,
+              delay:1,
             }}
 
             whileHover={{
@@ -96,7 +96,7 @@ function Home() {
           
             
           >
-            <p className="bca">BCA Student  |  Frontend Developer
+            <p className="bca">BCA Student  |  Frontend Developer, 
             <br/>
             Building Modern & Responsive <br/>Web Experiences</p>
           </motion.h3>
@@ -112,7 +112,7 @@ function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{
             duration: 4,
-            delay:3,
+            delay:1.5,
           
           }}
         >
