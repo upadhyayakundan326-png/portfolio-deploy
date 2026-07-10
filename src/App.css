@@ -4,6 +4,3 @@ html, body, #root{
     background-color: black;
     box-sizing: border-box;
 }
-*{
-  outline:1px solid red;
-}
