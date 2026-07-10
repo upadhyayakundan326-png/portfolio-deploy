@@ -92,8 +92,10 @@
 }
 
 .siuu{
-    width:250px;
-    max-width:80%;
+     width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 .bca br{

@@ -36,6 +36,7 @@
     border:2px solid #444;
     border-radius:12px;
     transition:.3s;
+    box-sizing: border-box;
 }
 
 .contact-item:hover{
