@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 8%;
+  padding: 10px 8%;
+  
 }
 
 .hero{
@@ -23,22 +24,19 @@
 
 /* Left Side */
 
-.hero-left {
-  flex: 1;
-}
-
 .sec1 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 20px;
+  
 }
 
 .sec2 {
   font-size: 2rem;
-  line-height: 1.4;
-  color: #38bdf8;
+ 
+  color: #fff;
   margin-bottom: 25px;
+ 
  
              
               
@@ -46,31 +44,12 @@
 
 
 
-  .sec3{
-    width:350px;
-    min-height:220px;   /* 👈 height badh jayegi */
 
-    padding:30px;
-
-    border:2px solid #00f5ff;
-    border-radius:18px;
-
-    box-shadow:0 0 18px #00f5ff;
-
-    display:flex;
-    align-items:center;
-}
   
   
 
 
-/* Right Side */
 
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
 
 .siuu {
   width: 380px;
@@ -115,14 +94,11 @@
     font-size:1.25rem;
 }
 
-.sec3{
-    max-width:100%;
+
 }
 
-.sec3 p{
-    font-size:0.95rem;
-    line-height:1.8;
-}
+
+
 
 .siuu{
     width:240px;
@@ -130,5 +106,5 @@
     border-radius:50%;
 }
 
-}
+
 

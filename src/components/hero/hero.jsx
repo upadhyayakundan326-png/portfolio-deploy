@@ -24,7 +24,8 @@ const child = {
     opacity: 1,
     y: 0,  
     transition: {
-      duration: 0.6,
+      duration:0.6,
+      delay:1,
     },
   },
 };
@@ -78,8 +79,9 @@ function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 1.05,
-              duration: 0.02,
+              
+              duration: 3,
+              delay:2,
             }}
 
             whileHover={{
@@ -94,62 +96,24 @@ function Home() {
           
             
           >
-            Frontend Developer
-            <br />
-            Building Modern & Responsive Web Experiences
+            <p className="bca">BCA Student  |  Frontend Developer
+            <br/>
+            Building Modern & Responsive Web Experiences</p>
           </motion.h3>
-<motion.div
-  className=" sec3"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{
-    delay: 1,
-    duration: 1,
-  }}
-  style={{
-    marginTop: "60px",
-  }}
-  whileHover={{
-    scale: 1.02,
-    
-  }}
->
-  <motion.p
 
-  
-  
-  
-
-
-whileHover={{
-  scale:1.02,
-    
-}}
-
-  
-  >
-    <b>Description:</b>
-    <br />
-    I'm a BCA 3rd-year student and a Frontend Developer, currently learning
-    the MERN stack to become a Full-Stack Developer. I enjoy building
-    responsive and user-friendly web applications while continuously
-    improving my skills. I love learning new technologies, creating
-    real-world projects, and growing through hands-on development and
-    practical experience.
-  </motion.p>
-</motion.div>
 
 </div>
         
 
-        {/* Right Side */}
+    
         <motion.div
           className="hero-right"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 1,
-            delay: 1,
+            duration: 4,
+            delay:3,
+          
           }}
         >
           <motion.img

@@ -1,7 +1,8 @@
 body{
   color: #fff;
-  overflow-x: hidden;
+  
   padding:0;
   margin:0;
   background-color: black;
+  overflow-x: hidden;
 }

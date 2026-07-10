@@ -12,7 +12,15 @@ const Navbar = () => {
         duration: 0.8,
       }}
     >
-      <ul className="nav-links">
+      <h2 className="kundan"><em>KUNDAN.</em></h2>
+      <ul className="nav-links"
+       
+       
+      
+      
+      
+      >
+    
         <motion.li whileHover={{ scale: 1.1 }}>
           <a href="#home">Home</a>
         </motion.li>
