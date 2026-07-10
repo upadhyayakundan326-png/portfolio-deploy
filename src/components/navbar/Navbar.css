@@ -56,24 +56,23 @@
     }
 
 }
-
-/* Mobile */
 @media (max-width:480px){
 
     .navbar{
-        padding:15px 3%;
+        padding:10px 4%;
+    }
+
+    .kundan{
+        font-size:22px;
     }
 
     .nav-links{
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
+        gap:10px;
     }
 
     .nav-links li a{
-        font-size:14px;
+        font-size:12px;
     }
-
 }
 .kundan{
 margin-right: auto;
