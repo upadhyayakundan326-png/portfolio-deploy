@@ -3,6 +3,8 @@ import { color, motion } from "framer-motion";
 
 function Contact() {
   return (
+    
+    <div className="contact-box">
     <motion.section className="contact-section" id="contact"
     
     initial={{
@@ -30,7 +32,7 @@ function Contact() {
       <h2>Contact Me</h2>
       <p>Feel free to reach out. I'm always open to new opportunities.</p>
 
-    <div className="contact-box">
+    
 
         <div className="contact-item">
   <span>@gmail</span>
@@ -39,15 +41,15 @@ function Contact() {
     href="mailto:upadhyayakundan326@gmail.com?subject=Portfolio%20Enquiry"
     className="mail-btn"
   >
-    📩
+    📩Gmail: upadhyayakundan326@gmail.com
   </a>
-</div>
+
 
         <a
           href="tel:9101648595"
           className="contact-item"
         >
-          📞 +91 9101648595
+          phone-no:      +91 9101648595
         </a>
 
         <a
@@ -57,7 +59,7 @@ function Contact() {
           rel="noreferrer"
           className="contact-item"
         >
-          💼 LinkedIn
+          💼 LinkedIn:     Kundan Upadhyaya
         </a>
 
         <a
@@ -66,11 +68,12 @@ function Contact() {
           rel="noreferrer"
           className="contact-item"
         >
-          💻 GitHub
+          💻 GitHub :       click Here
         </a>
 
       </div>
     </motion.section>
+    </div>
   );
 }
 

@@ -1,6 +1,15 @@
-html, body, #root{
+
+    
+   
+    
+
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
     overflow-x:hidden;
-    width:100%;
-    background-color: black;
-    box-sizing: border-box;
+     background: #0F172A;
 }

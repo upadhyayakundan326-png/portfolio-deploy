@@ -106,32 +106,17 @@ function Home() {
         
 
     
-        <motion.div
-          className="hero-right"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            duration: 4,
-            delay:1.5,
-          
-          }}
-        >
-          <motion.img
-            src="/kundan.jpeg"
-            alt="kundan"
-            className="siuu"
-            whileHover={{
-              scale: 1.05,
-              rotate: 2,
-            }}
-            transition={{
-              duration: 0.4,
-            }}
-          />
-        </motion.div>
+              <motion.div className="hero-right">
+  <motion.img
+    src="/kundan.jpeg"
+    alt="kundan"
+    className="siuu"
+  />
+</motion.div>
       </section>
     </motion.div>
   );
 }
 
 export default Home;
+

@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useActionState, useState } from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  
+  
+
+  
 
   return (
     <motion.nav
@@ -11,10 +16,11 @@ const Navbar = () => {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-    >
+    >   
       <h2 className="kundan">
         <em>KUNDAN.</em>
       </h2>
+     
 
       <button
         className="menu-btn"
@@ -42,6 +48,6 @@ const Navbar = () => {
       </ul>
     </motion.nav>
   );
-};
 
+};
 export default Navbar;

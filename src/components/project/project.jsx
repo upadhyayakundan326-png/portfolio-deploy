@@ -45,7 +45,9 @@ const Project = () => {
         <h1 className='features'>Features</h1>
            
            
-      <ul className='bulletine'>
+      <ul className='bulletine' style={{
+        color:"white",
+      }}>
         <li>(implement props for passing data)</li>
         <li>implement react router for client side rendering</li>
         <li>use state managment with usestate and also use usefect</li>
@@ -60,8 +62,12 @@ const Project = () => {
         <li>Remove items from cart</li>
         <li>Total price calculation</li>
       </ul>
-               <h1 className='f'>Future Improvements</h1>
-      <ul className='future'>
+               <h1 className='f'style={{
+        color:"white",
+      }}>Future Improvements</h1>
+      <ul className='future'style={{
+        color:"white",
+      }}>
         <li>replace props drilling with context api for scalability</li>
         <li> make the entire application fully responsiv</li>
         <li>intregrate backend</li>
