@@ -1,28 +1,76 @@
-
 import "./Skills.css";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+
 const skills = [
-  { name:"HTML5", icon: "🌐" },
-  { name:"CSS3", icon: "🎨" },
-  { name: "JavaScript", icon: "🟨" },
-  { name: "React.js", icon: "⚛️" },
-  { name:"Framer Motion", icon: "✨" },
-  {name:"C++",icon:"➕"},
-  {name:"OOPS",icon:"🧩"},
+  {
+    name: "HTML5",
+    desc: "Creates the structure and semantic foundation of modern web pages.",
+  },
+  {
+    name: "CSS3",
+    desc: "Designs responsive layouts with clean styling and animations.",
+  },
+  {
+    name: "JavaScript",
+    desc: "Adds interactivity, logic and dynamic functionality to websites.",
+  },
+  {
+    name: "React.js",
+    desc: "Builds reusable components for fast and interactive user interfaces.",
+  },
+  {
+    name: "Framer Motion",
+    desc: "Creates smooth animations and engaging user experiences.",
+  },
+  {
+    name: "OOP",
+    desc: "Uses object-oriented programming principles to write scalable code.",
+  },
 ];
 
 const tools = [
-  { name: "Git", icon: "🔧" },
-  { name: "GitHub", icon: "🐙" },
-  { name: "VS Code", icon: "💻" },
-  { name: "Vercel", icon: "▲" },
+  {
+    name: "Git",
+    desc: "Tracks code changes and manages version history efficiently.",
+  },
+  {
+    name: "GitHub",
+    desc: "Hosts projects and makes collaboration easier with Git.",
+  },
+  {
+    name: "VS Code",
+    desc: "My primary editor for writing and debugging code.",
+  },
+  {
+    name: "Vercel",
+    desc: "Deploys and hosts modern frontend applications with ease.",
+  },
 ];
 
 const learning = [
-  { name: "Node.js", icon: "🟢" },
-  { name: "Express.js", icon: "🚀" },
-  { name: "MongoDB", icon: "🍃" },
+  {
+    name: "Node.js",
+    desc: "Learning backend development using JavaScript runtime.",
+  },
+  {
+    name: "Express.js",
+    desc: "Building REST APIs and server-side applications.",
+  },
+  {
+    name: "MongoDB",
+    desc: "Learning NoSQL databases for full-stack development.",
+  },
 ];
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
 const card = {
   hidden: {
     opacity: 0,
@@ -32,164 +80,132 @@ const card = {
     opacity: 1,
     y: 0,
     transition: {
-  duration: 0.5,
+      duration: 0.4,
+      ease: "easeOut",
     },
   },
 };
 
-const Skills = () => {
+function Skills() {
   return (
-    <motion.section id="skills" className="skills-section"
-    initial={{ opacity: 0, scale: 0.9 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 2}}
-  viewport={{ once: false, amount: 0.3 }}
-    
-    >
-      <h2>My Skills</h2>
-
-      <p className="skills-text">
-        Here are the technologies and tools I use to build modern,
-        responsive, and interactive web applications. I'm continuously
-        improving my skills while expanding into the MERN stack.
-      </p>
-
-      {/* Skills */}
-      <h3 className="category-title">Frontend Skills</h3>
-
-      <motion.div className="skills-container"
-      
-       initial={{
-    y: 100,
-    opacity: 0,
-  }}
-  whileInView={{
-    y: 0,
-    opacity: 1,
-  }}
-  transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}
-  viewport={{
-    once: false,
-    amount: 0.3,
-  }}
-      
-      
-      
-      
+    <section className="skills-section" id="skills">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
-        {skills.map((skill, index) => (
-          <motion.div className="skill-card" key={index}
-          whileHover={{ scale: 1.1, 
-            rotate: 0 ,
-            backgroundColor:"crimson",
+        <h2 className="section-title">
+          Skills & <span>Technologies</span>
+        </h2>
 
-          }}
-  transition={{ type: "spring", stiffness: 300 }}
-  whileTap={{
-    scale:0.7,
-    opacity:0.6,
-  }}
-
-          
-          >
-            <span className="skill-icon">{skill.icon}</span>
-            <h4 className="skill-name">  {skill.name}</h4>
-            
-          
-            
-            
-                
-        
-          </motion.div>
-
-        ))}
+        <p className="skills-text">
+          I build clean, responsive and modern web applications while
+          continuously improving my frontend skills and expanding into
+          full-stack development with the MERN Stack.
+        </p>
       </motion.div>
+
+      {/* Frontend Skills */}
+
+      <div className="category">
+        <h3 className="category-title">Frontend Skills</h3>
+
+        <motion.div
+          className="skills-container"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {skills.map((skill, index) => (
+            <motion.div
+              className="skill-card"
+              key={index}
+              variants={card}
+              whileHover={{
+                y: -8,
+                scale: 1.03,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
+            >
+              <h4>{skill.name}</h4>
+
+              <p>{skill.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
 
       {/* Tools */}
-      <h3 className="category-title">Tools</h3>
 
-      <motion.div className="skills-container"
-      
-      initial={{
-    y: 100,
-    opacity: 0,
-  }}
-  whileInView={{
-    y: 0,
-    opacity: 1,
-  }}
-  transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}
-  viewport={{
-    once: false,
-    amount: 0.3,
-  }}
-       
-      >
-        {tools.map((tool, index) => (
-          <motion.div className="skill-card" key={index}
-             
-           whileHover={{ scale: 1.1, 
-            rotate: 0 ,
-            backgroundColor:"crimson",
-           }}
-           whileTap={{
-            scale:0.5,
-           }}
-          
-          
-          >
-            <span className="skill-icon">{tool.icon}</span>
-            <h4 className="skill-name">{tool.name}</h4>
-          </motion.div>
-        ))}
-      </motion.div>
+      <div className="category">
+        <h3 className="category-title">Tools</h3>
 
-      {/* Learning */}
-      <h3 className="category-title">Currently Learning</h3>
+        <motion.div
+          className="skills-container"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {tools.map((tool, index) => (
+            <motion.div
+              className="skill-card"
+              key={index}
+              variants={card}
+              whileHover={{
+                y: -8,
+                scale: 1.03,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
+            >
+              <h4>{tool.name}</h4>
 
-      <motion.div className="skills-container"
-       initial={{
-    y: 100,
-    opacity: 0,
-  }}
-  whileInView={{
-    y: 0,
-    opacity: 1,
-  }}
-  transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}
-  viewport={{
-    once: false,
-    amount: 0.3,
-  }}>
-        {learning.map((item, index) => (
-          <motion.div className="skill-card" key={index}
-          
-        
-  variants={card}
-  whileHover={{
-    scale: 1.08,
-    backgroundColor: "crimson",
-  }}
-        
-          
-          >
-            <span className="skill-icon">{item.icon}</span>
-            <h4 className="skill-name">{item.name}</h4>
-          </motion.div>
-        ))}
-      </motion.div>
-    </motion.section>
-    
+              <p>{tool.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Currently Learning */}
+
+      <div className="category">
+        <h3 className="category-title">Currently Learning</h3>
+
+        <motion.div
+          className="skills-container"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {learning.map((item, index) => (
+            <motion.div
+              className="skill-card"
+              key={index}
+              variants={card}
+              whileHover={{
+                y: -8,
+                scale: 1.03,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
+            >
+              <h4>{item.name}</h4>
+
+              <p>{item.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
   );
-};
+}
 
 export default Skills;

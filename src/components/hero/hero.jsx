@@ -65,14 +65,15 @@ function Home() {
                 style={{ 
                   display: "inline-block",
                   marginRight: "10px",
-                   color: word === "Kundan" ? "#00f5ff" : "white",
-      textShadow: word === "Kundan" ? "10px 10px 15px #00f5ff" : "none",
+                   color: word === "Kundan" ? "crimson" : "white",
+
                 }}
               >
                 {word}
               </motion.span>
             ))}
           </motion.h1>
+          
            
           <motion.h3
             className="sec2"
@@ -100,6 +101,22 @@ function Home() {
             <br/>
             Building Modern & Responsive <br/>Web Experiences</p>
           </motion.h3>
+
+          <motion.button className="resume"
+          
+           initial={{
+      opacity:0,
+      scale:0.9,
+
+    }}
+    whileInView={{
+      opacity:1,
+      scale:1.02,
+    }}
+    transition={{ duration: 2}}
+  viewport={{ once: false, amount: 0.3 }}
+          
+          >Download Resume</motion.button>
 
 
 </div>

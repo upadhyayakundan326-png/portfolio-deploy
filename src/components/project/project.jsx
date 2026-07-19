@@ -1,102 +1,81 @@
-import React from 'react'
-import "./Project.css"
-import { color, motion } from "framer-motion";
+import React from "react";
+import "./Project.css";
 
-const Project = () => {
-  return (<>
-    <motion.div className='project-container'id='project'
-    
-    
-    initial={{
-    y: 100,
-    opacity: 0,
-    scale:0.9,
-  }}
-  whileInView={{
-    y: 0,
-    opacity: 1,
-    scale:1,
-  }}
-  transition={{
-    duration: 2,
-    ease: "easeOut",
-     type: "spring", 
-  }}
-  viewport={{
-    once: false,
-    amount: 0.3,
-  }}
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    >
-  
+function Project() {
+  return (
+    <section className="project-container" id="project">
 
-          <h1 className='h1'> My Projects</h1>
+      <h1 className="h1">My Projects</h1>
 
-      <img src='jerseycaaaaa.jpg'alt='Browsing issue' className='jerseyca'></img>
+      <div className="project-card">
 
-        <h1 className='features'>Features</h1>
-           
-           
-      <ul className='bulletine' style={{
-        color:"white",
-      }}>
-        <li>(implement props for passing data)</li>
-        <li>implement react router for client side rendering</li>
-        <li>use state managment with usestate and also use usefect</li>
-        <li>created reusable components</li>
-        
-       <li>Responsive React.js UI</li>
-        <li>Search jerseys by team name</li>
-        <li>Filter by National & Club category</li>
-        <li>Select jersey size (S, M, L, XL)</li>
-        <li>Add to Cart functionality</li>
-        <li>Increase & decrease quantity</li>
-        <li>Remove items from cart</li>
-        <li>Total price calculation</li>
-      </ul>
-               <h1 className='f'style={{
-        color:"white",
-      }}>Future Improvements</h1>
-      <ul className='future'style={{
-        color:"white",
-      }}>
-        <li>replace props drilling with context api for scalability</li>
-        <li> make the entire application fully responsiv</li>
-        <li>intregrate backend</li>
-        <li>improve the code structure for better user experience</li>
-      </ul>
-      <div className='flex'>
-      <a href=""
-         target="_blank"   
-         className='demo' 
-         >  
-         
-         Live</a>
+        <img
+          src="jerseycaaaaa.jpg"
+          alt="JerseyCA"
+          className="jerseyca"
+        />
 
-      <a href="https://github.com/upadhyayakundan326-png/jerseyca"
-         target="_blank"   
-         className='Github' 
-         >  
-         
-         Github</a>
-         
-</div>
-         
-            
-         
+        <div className="project-content">
 
-      
-    </motion.div>
+          <h2 className="project-title">JerseyCA</h2>
 
-    </>
-  )}
+          <p className="project-desc">
+            A responsive React.js jersey shopping application with search,
+            filters and cart management.
+          </p>
 
-export default Project
+          <div className="project-section">
+
+            <h3 className="features">Key Features</h3>
+
+            <ul className="bulletine">
+              <li>React Router</li>
+              <li>useState & useEffect</li>
+              <li>Reusable Components</li>
+              <li>Search & Filter Jerseys</li>
+              <li>Cart Management</li>
+              <li>Size Selection</li>
+              <li>Total Price Calculation</li>
+            </ul>
+
+          </div>
+
+          <div className="project-section">
+
+            <h3 className="future-title">Future Plans</h3>
+
+            <ul className="future">
+              <li>Context API</li>
+              <li>Backend Integration</li>
+              <li>Authentication</li>
+              <li>Improve UI & Performance</li>
+            </ul>
+
+          </div>
+
+          <div className="flex">
+
+            <a href="#" className="demo">
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/upadhyayakundan326-png/jerseyca"
+              target="_blank"
+              rel="noreferrer"
+              className="Github"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default Project;

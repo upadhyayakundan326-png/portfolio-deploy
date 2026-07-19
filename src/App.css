@@ -11,5 +11,6 @@
 html,
 body{
     overflow-x:hidden;
-     background: #0F172A;
+     background: black;
+       scroll-behavior: smooth;
 }

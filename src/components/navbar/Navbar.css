@@ -1,6 +1,6 @@
 .navbar{
     width:100%;
-    padding:10px 8%;
+   
     display:flex;
     justify-content:flex-end;
     align-items:center;
@@ -8,16 +8,16 @@
     top:0;
     left:0;
     box-sizing:border-box;
-    z-index:1000;
+   
 
     background: rgba(15, 23, 42, 0.85);
-backdrop-filter: blur(12px);
-border-bottom: 1px solid #1E293B;
+
+
 }
 
 .kundan{
     margin-right:auto;
-    color:#00F5FF;
+    color:grey;
     text-shadow:0 0 10px rgba(0,245,255,0.7);
     font-weight:900;
     font-size:36px;

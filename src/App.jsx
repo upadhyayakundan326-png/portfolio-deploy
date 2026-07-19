@@ -7,14 +7,18 @@ import Contact from "./components/contact/contact";
 import Skills from "./components/skills/skills";
 import Project from "./components/project/project";
 
-
+import About from "./components/about/about";
+import Education from "./components/education/eduation";
 function App(){
 
   return(
   <>
   <Navbar/>
   <Hero/>
+  <About/>
+
   <Skills/>
+  <Education/>
   <Project/>
   
   <Contact/>
